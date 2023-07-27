@@ -5,6 +5,9 @@
 body{
     margin: 0;
 }
+img{
+    cursor: pointer;
+}
 /* every fake link */
 a{
     color: rgb(0, 0, 0);
@@ -81,6 +84,7 @@ header .ynet{
 }
 /* the nav bar */
 .navbar{
+    position: sticky;
     background-color: rgb(222, 26, 26) ;
     height: 28px;
     display: flex;
@@ -117,30 +121,49 @@ nav a:hover, .more:hover{
 .flash{
     margin-top: 20px;
     height: 100px;
-    display: grid;
-    position: relative;
+    /* position: relative; */
     background-color: rgba(243, 248, 249);
+    display: flex;
+    
 }
-.f1{
-    padding: 0px 16px;
-    /* padding-right: 16px;
-    padding-left: 16px; */
+.f1,.f2,.f3,.f4,.f5 {
+    padding: 0px 16px 0px 8px;
     text-align: right;
-    width: 217px;
+    width: 190px;
     height: 70px;
-    position: absolute;
     border-left-style: Dotted ;
     border-left-color: rgb(0, 0, 0);
     border-left-width: 2px;
+    cursor: pointer;
 }
+.f5{
+    border-left-style: none ;
+}
+.f6{
+    color:rgb(222, 26, 26) ;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    
+}
+aside img{
+    margin-right: 5px;
+    position: relative;
+     top:3px;
+}
+article{
+    border: solid;
+}
+article img
 /* the top advertize */
 .advu{
     position: relative;
     top: 0;
-    text-align: center; 
+    
 }
 /* his image */
-.advu img{
+.uadvertize img{
     height: 124.4px;
     width: 1005px;
     border: solid 5px ;
@@ -148,7 +171,7 @@ nav a:hover, .more:hover{
     
 }
 /* the right advertize  */
-.advr{
+.radvertize{
     position: fixed;
     top: 0;
     right: 0;
