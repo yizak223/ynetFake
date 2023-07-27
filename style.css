@@ -154,8 +154,12 @@ aside img{
 }
 article{
     border: solid;
+    height: 343px;
 }
-article img
+article img{
+    height: 343px;
+    float: left;
+}
 /* the top advertize */
 .advu{
     position: relative;
