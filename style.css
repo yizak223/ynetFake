@@ -1,0 +1,144 @@
+*{
+    direction: rtl;
+    font-family:  Block MF Regular A;
+    
+   
+    
+}
+/* every fake link */
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/* the content in the center */
+main{
+    width: 1240px;
+    height: 103px;
+    margin-left: 30vh;
+    margin-right: 20vh;
+    text-align: center;
+}
+header{
+    width: 1240px;
+    height: 103px;
+    margin-top: 10px;
+   position: relative;
+   font-size: 13px;
+   font-weight: 600;
+}
+/* ynet image */
+header .ynet{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 176px;
+    height: 75px;
+}
+/* make them be in the same line */
+.user,.puser,#wth,.weather,.pemail,.imgemail,.pbell,.bell{
+    position: absolute;
+    bottom: 10px;
+    margin: 0;
+}
+/*  bell */
+.bell{
+    left: 100%;
+    margin-left: 4px;
+}
+/* bell text */
+.pbell{
+    font-weight: 600;
+}
+/* the red email */
+.imgemail{
+    right: 70px;
+    margin-left: 4px;
+}
+
+.pemail{
+    right: 91px;
+}
+.weather{
+    right: 168px;
+}
+#wth{
+    right: 195px;
+    border: none;
+}
+.user{
+    left: 285px;
+}
+.puser{
+    left: 235px;
+}
+
+/* the top advertize */
+.advu{
+    position: relative;
+    top: 0;
+    text-align: center;
+   
+}
+/* his image */
+.advu img{
+    height: 124.4px;
+    width: 1005px;
+    border: solid 5px ;
+    border-color: rgb(233, 233, 233);
+    
+}
+/* the right advertize  */
+.advr{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* the container accessibility icon */
+.acb{
+    position: fixed;
+    top: 6vw;
+    left: 0;
+    
+    
+}
+/* icon */
+.acb i{
+    
+    background-color: rgb(5, 5, 46);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 500;
+    width:2vw;
+    height: 5vh;
+    padding-top: 8px;
+    padding-right: 5px;
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+}
+/* the butterfly */
+.butr{
+    position: fixed;
+    top: 23vh;
+    left: 0;
+    background-color: rgb(36,170,226);
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+    padding-top: 3px;
+    padding-right: 5px;
+    
+}
+
+.butr img{
+    width: 1.5vw;
+}
+.butr:hover{
+    padding-left: 20px;
+    transition: 1s;
+}
+/* the advertize in the buttom */
+footer{
+    position: fixed;
+    bottom: 0;
+}
