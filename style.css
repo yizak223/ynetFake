@@ -3,7 +3,11 @@
     font-family:  Block MF Regular A; 
 }
 body{
-    margin: 0;
+    width: 1240px;
+    height: 103px;
+    margin-left: 30vh;
+    margin-right: 20vh;
+    text-align: center;
 }
 img{
     cursor: pointer;
@@ -16,11 +20,11 @@ a{
 /* the content in the center */
 main{
     /* width: 80%; */
-    width: 1240px;
+    /* width: 1240px;
     height: 103px;
     margin-left: 30vh;
     margin-right: 20vh;
-    text-align: center;
+    text-align: center; */
 }
 header{
     width: 1240px;
@@ -84,14 +88,15 @@ header .ynet{
 }
 /* the nav bar */
 .navbar{
-    position: sticky;
-    background-color: rgb(222, 26, 26) ;
-    height: 28px;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(222, 26, 26) ;
+    height: 28px;
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    position: sticky;
+    top: 0;
 }
 nav a, .more{
     color: rgb(255, 255, 255);
@@ -124,7 +129,7 @@ nav a:hover, .more:hover{
     /* position: relative; */
     background-color: rgba(243, 248, 249);
     display: flex;
-    
+    margin-bottom: 15px;
 }
 .f1,.f2,.f3,.f4,.f5 {
     padding: 0px 16px 0px 8px;
@@ -145,23 +150,47 @@ nav a:hover, .more:hover{
     margin-top: 40px;
     margin-right: 40px;
     cursor: pointer;
-    
 }
 aside img{
     margin-right: 5px;
     position: relative;
      top:3px;
 }
-article{
-    border: solid;
-    height: 343px;
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: right;
+    height: 343px;;
 }
-article img{
+.paragrph{
+    grid-column: 1/ span 1;
+}
+.paragraphs p {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+ }
+ /* the image container */
+ .image{
+    grid-column: 2 / span 1;
+    
+ }
+ .image img {
     height: 343px;
-    float: left;
+    width: 611px;
+}
+  .date{
+    grid-row: 1 / span 1; 
+    grid-column: 1 / span 1;
+  }
+.title{
+    font-size: 48px;
+}
+.paragrph{
+    font-size: 20px;
 }
 /* the top advertize */
-.advu{
+.uadvertize{
     position: relative;
     top: 0;
     
@@ -224,4 +253,5 @@ article img{
 footer{
     position: fixed;
     bottom: 0;
+    right: -20%;
 }
