@@ -25,7 +25,7 @@ header{
     margin-top: 10px;
    position: relative;
    font-size: 13px;
-   font-weight: 600;
+   /* font-weight: 600; */
 }
 /* ynet image */
 header .ynet{
@@ -50,7 +50,7 @@ header .ynet{
 /* bell text */
 .pbell{
     right: 20px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 /* the red email */
 .imgemail{
@@ -93,6 +93,9 @@ nav a, .more{
     color: rgb(255, 255, 255);
     margin-top: 3px;
 }
+nav a:hover, .more:hover{
+    font-weight: 800;
+}
 .more{
     margin: 4px;
     border-radius: 50px;
@@ -109,6 +112,26 @@ nav a, .more{
     width: 20px;
     height: 20px;
     margin-right: 0;
+}
+/* the news flash */
+.flash{
+    margin-top: 20px;
+    height: 100px;
+    display: grid;
+    position: relative;
+    background-color: rgba(243, 248, 249);
+}
+.f1{
+    padding: 0px 16px;
+    /* padding-right: 16px;
+    padding-left: 16px; */
+    text-align: right;
+    width: 217px;
+    height: 70px;
+    position: absolute;
+    border-left-style: Dotted ;
+    border-left-color: rgb(0, 0, 0);
+    border-left-width: 2px;
 }
 /* the top advertize */
 .advu{
