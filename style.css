@@ -5,8 +5,7 @@
 body{
     width: 1240px;
     height: 103px;
-    margin-left: 30vh;
-    margin-right: 20vh;
+    margin-right: 25vh;
     text-align: center;
 }
 img{
@@ -57,7 +56,6 @@ header .ynet{
 /* bell text */
 .pbell{
     right: 20px;
-    /* font-weight: 600; */
 }
 /* the red email */
 .imgemail{
@@ -127,7 +125,6 @@ nav a:hover, .more:hover{
 .flash{
     margin-top: 20px;
     height: 100px;
-    /* position: relative; */
     background-color: rgba(243, 248, 249);
     display: flex;
     margin-bottom: 15px;
@@ -187,9 +184,14 @@ aside img{
     margin-bottom: 10px;
     font-size: 48px;
 }
-.text p{
+.paragrph{
     margin-top: 0px;
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+.Reporter{
+   color: #7a7a7b; 
+   margin-top: 0;
 }
 .advertize-main{
     height: 497px; 
