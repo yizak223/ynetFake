@@ -97,6 +97,7 @@ header .ynet{
     padding-right: 10px;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 nav a, .more{
     color: rgb(255, 255, 255);
@@ -151,11 +152,14 @@ nav a:hover, .more:hover{
     margin-right: 40px;
     cursor: pointer;
 }
+/* the arrow */
 aside img{
     margin-right: 5px;
     position: relative;
-     top:3px;
+     top: 3px;
+     
 }
+/* the first report */
 .grid-container{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -164,13 +168,10 @@ aside img{
 }
 .paragrph{
     grid-column: 1/ span 1;
+    font-size: 20px;
 }
-.paragraphs p {
-    margin: 0;
-    padding: 5px;
-    border: 1px solid #ccc;
- }
- /* the image container */
+
+ /* the image report */
  .image{
     grid-column: 2 / span 1;
     
@@ -184,11 +185,26 @@ aside img{
     grid-column: 1 / span 1;
   }
 .title{
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 48px;
 }
-.paragrph{
-    font-size: 20px;
+.text p{
+    margin-top: 0px;
+    margin-left: 10px;
 }
+/* the left news in red  */
+.container-news{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.text-news{
+    text-align: right;
+    padding: 10px;
+    background-color: rgb(222, 26, 26);
+    width: 390px;
+}
+
 /* the top advertize */
 .uadvertize{
     position: relative;
