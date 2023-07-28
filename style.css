@@ -243,11 +243,13 @@ aside img{
 }
 
 .butr img{
-    width: 1.5vw;
+    width: 25px;
 }
 .butr:hover{
     padding-left: 20px;
-    transition: 1s;
+    border-start-start-radius: 35%;
+    border-end-start-radius: 35%;
+    transition: all 1s;
 }
 /* the advertize in the buttom */
 footer{
