@@ -159,7 +159,7 @@ aside img{
      top: 3px;
      
 }
-/* the first report */
+/* the main report */
 .grid-container{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -170,12 +170,10 @@ aside img{
     grid-column: 1/ span 1;
     font-size: 20px;
 }
-
- /* the image report */
- .image{
+.image{
     grid-column: 2 / span 1;
     
- }
+}
  .image img {
     height: 343px;
     width: 611px;
@@ -193,18 +191,60 @@ aside img{
     margin-top: 0px;
     margin-left: 10px;
 }
-/* the left news in red  */
+.advertize-main{
+    height: 497px; 
+    width: 300px;
+    float: right;
+}
+.advertize-main2{
+    float: right; 
+    height: 497px; 
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.the-second-part{
+    margin-top: 10px;
+}
+/* from here this is the left news  */
 .container-news{
     display: grid;
     grid-template-columns: auto 1fr;
+    margin-bottom: 10px;
 }
-.text-news{
+.text-news, .text-news2, .text-news4{
     text-align: right;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: rgb(222, 26, 26);
     width: 390px;
+    color: #ffffff;
+    height: 113px;
 }
-
+.text-news2{
+    background-color: #1417ac;
+}
+.text-news4{
+   background-color: #0c1c3a;
+}
+.image-news img{
+    height: 113px; 
+    width: 200px;
+}
+.text-news h2, .text-news2 h2,.text-news4 h2{
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.the-text, .the-text2, .text-news4{
+    margin: 0;
+    font-weight: 500;
+}
+.reporter, .reporter2, .reporter4{
+    margin: 0;
+     margin-top: 7px;
+     font-size: 14px;
+}
 /* the top advertize */
 .uadvertize{
     position: relative;
