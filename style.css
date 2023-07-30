@@ -87,41 +87,40 @@ header .ynet{
 }
 /* the nav bar */
 .navbar{
-    display: flex;
-    justify-content: space-between;
     background-color: rgb(222, 26, 26) ;
     height: 28px;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
     position: sticky;
     top: 0;
-    z-index: 10;
 }
-nav a, .more{
+.navbar a, .more{
+    margin: 0px 0px 0px 30px;
     color: rgb(255, 255, 255);
-    margin-top: 3px;
+    margin-top: 5px;
+}
+.link-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+.navbar i{
+    color: #ffffff;
+    position: relative;
+    top: 0.8vh;
 }
 nav a:hover, .more:hover{
     font-weight: 800;
 }
-.more{
-    margin: 4px;
+.more{ 
+    margin: 5px 0px 0px 30px;
     border-radius: 50px;
     background-color: rgb(222, 26, 26);
     border-color: rgb(255, 255, 255);
     border-width: 2px;
     color: #ffffff;
-   width: 40px;
+   width: 45px;
+   padding-top: 1px;
 }
-.search{
-    position: relative;
-    right: 35px;
-    top:3px; 
-    width: 20px;
-    height: 20px;
-    margin-right: 0;
-}
+
 /* the news flash */
 .flash{
     margin-top: 20px;
@@ -142,6 +141,12 @@ nav a:hover, .more:hover{
     border-left-width: 2px;
     cursor: pointer;
 }
+.f1,.f2,.f3,.f4,.f5{
+    font-weight: bold;
+}
+.spann{
+    font-weight: 400;
+}
 .f5{
     border-left-style: none ;
 }
@@ -152,6 +157,7 @@ nav a:hover, .more:hover{
     margin-right: 40px;
     cursor: pointer;
 }
+
 /* the arrow */
 aside img{
     margin-right: 5px;
@@ -165,16 +171,27 @@ aside img{
 .apear1 ,.apear2 ,.apear3 ,.apear4 ,.apear5 {
     display: none;
     position: absolute;
-    background-color: #ffffff;
     width: 350px;
     max-height: fit-content;
+    box-shadow:inset 0 0 10px 0 #b2b2b4; ;
+    text-align: right;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 5px;
 }
 .hoverflash1:hover .apear1 ,.hoverflash2:hover .apear2 ,.hoverflash3:hover .apear3 ,.hoverflash4:hover .apear4,.hoverflash5:hover .apear5{
     display: block;
     background-color: #ffffff;
     color:#000000
 }
-
+.icon-flash{
+    text-align: right;
+}
+.icon-flash img{
+    width: 26px;
+    margin: 10px;
+}
 /* the main report */
 .grid-container{
     display: grid;
@@ -222,7 +239,7 @@ aside img{
     float: right; 
     height: 497px; 
     margin-right: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .the-second-part{
     margin-top: 10px;
