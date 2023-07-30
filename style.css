@@ -91,6 +91,8 @@ header .ynet{
     height: 28px;
     position: sticky;
     top: 0;
+    z-index: 100;
+    width: 1231px;
 }
 .navbar a, .more{
     margin: 0px 0px 0px 30px;
@@ -284,6 +286,59 @@ aside img{
      margin-top: 7px;
      font-size: 14px;
 }
+
+
+  /*  grid container */
+  .the-hottest {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+/*  the first row */
+.the-title {
+    grid-column: span 3;
+    width: 610px;
+    height: 30px;
+    background-color:#1417ac ;
+    color: #ffffff;
+    text-align: right;
+  }
+   .the-title p{
+    display: flex;
+    margin: 10px;
+    line-height: 15px;
+    font-size: 17px;
+    font-weight: bold;
+   }
+
+.hottest-title{
+    height: 60px;
+    width: 190px;
+    margin-top: 0px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    cursor: pointer;
+}
+.hottest-title:hover{
+    color: #3537c0;
+}
+.reporter-hottest{
+    font-size: 13px;
+     color:#78787b;
+      text-align: right;
+}
+
+  /* Styling the image in the second-row-articles */
+  .second-row-articles img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ 
+ 
+/* from here down all the advertize */
 /* the top advertize */
 .uadvertize{
     position: relative;
