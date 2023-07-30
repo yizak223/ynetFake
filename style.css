@@ -297,7 +297,7 @@ aside img{
 /*  the first row */
 .the-title {
     grid-column: span 3;
-    width: 610px;
+    width: 608px;
     height: 30px;
     background-color:#1417ac ;
     color: #ffffff;
@@ -329,21 +329,86 @@ aside img{
      color:#78787b;
       text-align: right;
 }
-
-  /* Styling the image in the second-row-articles */
-  .second-row-articles img {
+.second-row-articles img {
     max-width: 100%;
     height: auto;
-  }
+}
 
- 
- 
+.part4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+}
+.part4-title{
+    height:30px ;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    background-color:#1417ac ;
+}
+.part4-title p{
+     display: flex;
+    margin: 10px;
+    line-height: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#more-news{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.news4 {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: first one auto-sized, second one takes remaining space */
+     grid-template-rows: repeat(3, 1fr); /* Three rows with equal height */
+    gap: 10px;          
+}
+.news4 p{
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+}
+.title-news4:hover{
+    color:#3537c0 ;
+}
+.news4 i{
+    color: #000000;
+    font-size: 15px;
+}
+.reporter-news4{
+    font-weight: 400;
+    font-size: 12px;
+    color: #78787b ;
+    padding-top: 15px;
+}
+.news4 img{
+    width: 190px;
+    height: 107px;
+}
+.item4 {
+     padding: 10px;
+ }
+
+.image-container4 {
+    grid-row: span 3; /* This will make the image span three rows */
+     max-width: 100%;
+     height: auto;
+     width: 190px;
+     height: 177px;
+}
+
+.item4 p {
+     margin: 0; 
+}
 /* from here down all the advertize */
 /* the top advertize */
 .uadvertize{
     position: relative;
-    top: 0;
-    
+    top: 0;   
 }
 /* his image */
 .uadvertize img{
